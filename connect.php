@@ -1,7 +1,7 @@
 <?php
 
-    $host="localhost";
-    $user="root";
+    $host="";
+    $user="";
     $pass="";
     $db="warframemerchdb";
 
