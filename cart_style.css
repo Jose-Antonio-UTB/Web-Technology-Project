@@ -1,0 +1,132 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.product-collection {
+    flex: 1;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* === TABLE CART STYLES === */
+.cart-table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    color: #fff;
+    background-color: #1c1c1e;
+    border: 1px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #444;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    background-color: #2a2a2c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cart-table td{
+    padding: 15px 20px;    
+}
+
+.cart-table img {
+    width: 60px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.qty-note {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+/* === HEADINGS === */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #1c1c1e;
+}
+
+/* === EMPTY CART MESSAGE === */
+.empty-cart-message {
+    text-align: center;
+    margin: 100px auto;
+    padding: 40px;
+    border: 2px dashed #888;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+    width: fit-content;
+    max-width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.empty-cart-message p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* === INPUT & BUTTONS === */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #145472;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e3d55;
+}
+
+/* === CHECKOUT FLOATING BUTTON === */
+.checkout-fixed-container {
+    position: fixed;
+    bottom: 20%;
+    right: 30px;
+    z-index: 999;
+}
+
+.checkout-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #b30000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.checkout-btn:hover {
+    background-color: #990000;
+}

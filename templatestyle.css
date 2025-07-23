@@ -1,0 +1,134 @@
+/* Back Button */
+.back-button-container {
+    position: absolute;
+    top: 10%;
+    left: 30px;
+    z-index: 1000;
+}
+
+.back-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #145472;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Main Body */
+.mainbody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: transitionIn 0.75s;
+    position: relative;
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+/* Product Image */
+.image-gallery {
+    flex-basis: 43%;
+    background: #145472;
+    box-shadow: -10px 5px 10px 10px gray;
+    transform: scale(1.07);
+    position: relative;
+}
+
+.image-gallery img {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.image-gallery .controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.image-gallery .btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image-gallery .btn.active {
+    background: #00b4d8;
+}
+
+/* Product Details */
+.product-details {
+    flex-basis: 53%;
+    padding: 40px 30px 40px 40px;
+    box-shadow: -10px 5px 10px 10px gray;
+}
+
+.details h2 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+
+.details h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.details p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.select-quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.select-quantity input {
+    background: gray;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    border-radius: 12px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Submit Button */
+.sub-btn .submit {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #145472;
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+.sub-btn .submit:hover {
+    transform: scale(1.05);
+}
